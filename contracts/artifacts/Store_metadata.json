@@ -1,0 +1,138 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"name": "addNewProduct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "availableProducts",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "products",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "price",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Store.sol": "Store"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Ownable.sol": {
+			"keccak256": "0x407dbd1bd97215fbf8497c3c732283357c50015e68551ca9689fe8e04f3d014d",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://1a7384e05872cc063a75233865a0fe20d3ea4edbaaa5cf19861b98081e4d63c0",
+				"dweb:/ipfs/QmVUrE8c5uBcPfsqMpSNqujBCMk1SHzUz8BoxN5PMmZhVX"
+			]
+		},
+		"contracts/Store.sol": {
+			"keccak256": "0x29dc30837114a4271ad91add7d40aeb1d692023228ea91e911ac0f593121007a",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://3f3763b50364ed0645ca9698d04568ad862523bd0f86f4bf2974ccd98d7dc62d",
+				"dweb:/ipfs/QmX7nd6CZYUf6fudfmQVaiN87UkmG3C1zWSoMLDiukYFnY"
+			]
+		}
+	},
+	"version": 1
+}
