@@ -88,6 +88,24 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "index",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantity",
+						"type": "uint256"
+					}
+				],
+				"name": "updateProductQuantity",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -126,11 +144,11 @@
 			]
 		},
 		"contracts/Store.sol": {
-			"keccak256": "0x29dc30837114a4271ad91add7d40aeb1d692023228ea91e911ac0f593121007a",
+			"keccak256": "0x623742535262f5feea0a2949aff06dce9c5be94eaf64adbb7a65fb5c9921e41f",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://3f3763b50364ed0645ca9698d04568ad862523bd0f86f4bf2974ccd98d7dc62d",
-				"dweb:/ipfs/QmX7nd6CZYUf6fudfmQVaiN87UkmG3C1zWSoMLDiukYFnY"
+				"bzz-raw://82c7828bbc9f34de4a5f6e0ce7772681ea8b1192a1e5240e7e3e2391e115d55f",
+				"dweb:/ipfs/QmcSm8a7QgKWsxTQ8e3MM2KeiLJ9xcm8mb1iCBg3N4cJQU"
 			]
 		}
 	},

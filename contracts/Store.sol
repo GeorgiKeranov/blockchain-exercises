@@ -19,4 +19,10 @@ contract Store is Ownable {
         availableProducts[name] = true;
         products.push(Product(name, quantity, price));
     }
+
+    function updateProductQuantity(uint index, uint quantity) public onlyOwner {
+        require(index < products.length, "The product is not existing!");
+
+        products[index].quantity = quantity;
+    }
 }
