@@ -49,6 +49,41 @@
 			},
 			{
 				"inputs": [],
+				"name": "getProducts",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "quantity",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "price",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct Store.Product[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
 				"name": "owner",
 				"outputs": [
 					{
@@ -70,6 +105,11 @@
 				],
 				"name": "products",
 				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
 					{
 						"internalType": "string",
 						"name": "name",
@@ -93,7 +133,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "index",
+						"name": "id",
 						"type": "uint256"
 					},
 					{
@@ -144,11 +184,11 @@
 			]
 		},
 		"contracts/Store.sol": {
-			"keccak256": "0x623742535262f5feea0a2949aff06dce9c5be94eaf64adbb7a65fb5c9921e41f",
+			"keccak256": "0xff80551c62737599ed28e0c0a3598eb43a6bc35b882c78e49a51a88673fca371",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://82c7828bbc9f34de4a5f6e0ce7772681ea8b1192a1e5240e7e3e2391e115d55f",
-				"dweb:/ipfs/QmcSm8a7QgKWsxTQ8e3MM2KeiLJ9xcm8mb1iCBg3N4cJQU"
+				"bzz-raw://925c3dacc71e998229530cce5c08ad8fe2294d4c022ab4f2ca4faa611d00d017",
+				"dweb:/ipfs/QmPCg6WASasq8k529M71rXLXLUjVWsNrHYVhX8VZaTL8H5"
 			]
 		}
 	},
