@@ -14,8 +14,13 @@ contract Store is Ownable {
     Product[] public products;
     mapping(string => bool) public availableProductsNames;
 
-    // Product id => (client address => product quantity)
-    mapping(uint => mapping(address => uint)) public productsPurchases;
+    struct Purchase {
+        uint quantity;
+        uint256 time;
+    }
+
+    // Product id => (Client address => Purchase)
+    mapping(uint => mapping(address => Purchase)) public productsPurchases;
 
     event ProductAdded(string, uint, uint);
     event ProductUpdated(uint, uint);
@@ -54,7 +59,7 @@ contract Store is Ownable {
         address clientAddress = msg.sender;
         
         // Check if the user has already bought the product
-        require(productsPurchases[id][clientAddress] == 0, "You have already bought this product!");
+        require(productsPurchases[id][clientAddress].quantity == 0, "You have already bought this product!");
 
         Product storage currentProduct = products[id];
 
@@ -68,11 +73,25 @@ contract Store is Ownable {
         payable(owner).transfer(totalPrice);
 
         // Add the new purchase to the state
-        productsPurchases[id][clientAddress] = quantity;
+        productsPurchases[id][clientAddress] = Purchase(quantity, block.number);
 
         // Remove the bought quantity from the product
         currentProduct.quantity -= quantity;
 
         emit ProductBought(clientAddress, id, quantity);
+    }
+
+    function returnProduct(uint id) public {
+        Purchase memory purchase = productsPurchases[id][msg.sender];
+        require(purchase.quantity != 0, "You have not bought this product!");
+
+        uint256 currentTime = block.number;
+        require(purchase.time + 100 >= currentTime, "Time for return has expired!");
+
+        // TODO send the money back to the msg.sender
+        // msg.sender.transfer()
+
+        products[id].quantity += purchase.quantity;
+        delete productsPurchases[id][msg.sender];
     }
 }

@@ -233,11 +233,29 @@
 				"outputs": [
 					{
 						"internalType": "uint256",
-						"name": "",
+						"name": "quantity",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "time",
 						"type": "uint256"
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					}
+				],
+				"name": "returnProduct",
+				"outputs": [],
+				"stateMutability": "nonpayable",
 				"type": "function"
 			},
 			{
@@ -295,11 +313,11 @@
 			]
 		},
 		"contracts/Store.sol": {
-			"keccak256": "0xbb8480f6bf128dc6b438eaffecedaf25b5024b409b7a7201c73de1a281ed813f",
+			"keccak256": "0xf474fd03d95a39e711f1599ef8c38f2306f04ed0010de7614d8ecca1830cd223",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://364541538c4024cb9aaf54219017961ad2e8d450cd7aceea83d1e6350dd09a4d",
-				"dweb:/ipfs/QmPZEyBDavfQa7taaApWEQ2mNetRChXvNU7K9wKuEswYvf"
+				"bzz-raw://7881aeca0e7dbc768a7bbee693b385407caade5152f1ad6452e0a38dfceeae48",
+				"dweb:/ipfs/QmXfcg2tRc39bBcPU9RxcfgvQMtyX3y3K5sSfqinpkUwJZ"
 			]
 		}
 	},
