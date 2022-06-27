@@ -60,6 +60,25 @@
 				"inputs": [
 					{
 						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "ProductReturned",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
 						"internalType": "uint256",
 						"name": "",
 						"type": "uint256"
@@ -120,7 +139,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "id",
+						"name": "productId",
 						"type": "uint256"
 					},
 					{
@@ -132,6 +151,49 @@
 				"name": "buyProduct",
 				"outputs": [],
 				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "clientAddressesByProduct",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "productId",
+						"type": "uint256"
+					}
+				],
+				"name": "getClientsAdressesByBoughtProductId",
+				"outputs": [
+					{
+						"internalType": "address[]",
+						"name": "clientAddresses",
+						"type": "address[]"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			},
 			{
@@ -249,7 +311,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "id",
+						"name": "productId",
 						"type": "uint256"
 					}
 				],
@@ -262,7 +324,7 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
-						"name": "id",
+						"name": "productId",
 						"type": "uint256"
 					},
 					{
@@ -313,11 +375,11 @@
 			]
 		},
 		"contracts/Store.sol": {
-			"keccak256": "0xf474fd03d95a39e711f1599ef8c38f2306f04ed0010de7614d8ecca1830cd223",
+			"keccak256": "0xcccce2c66a56fbef850c6cc483223a548896f5ea47490cb10c104dae99d5c022",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://7881aeca0e7dbc768a7bbee693b385407caade5152f1ad6452e0a38dfceeae48",
-				"dweb:/ipfs/QmXfcg2tRc39bBcPU9RxcfgvQMtyX3y3K5sSfqinpkUwJZ"
+				"bzz-raw://6e6e71137dc9934c5668ed8e6dbeacd356850e9e09a39c652dcf560505a4c790",
+				"dweb:/ipfs/Qma9ywXcPxngoTsNbwpTcpkxfcMxptuCJhngV1f41nkqkc"
 			]
 		}
 	},
