@@ -1,0 +1,199 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "BIDEN",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "TRUMP",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "currentLeader",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "electionEnded",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "endElection",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"name": "seats",
+				"outputs": [
+					{
+						"internalType": "uint8",
+						"name": "",
+						"type": "uint8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "name",
+								"type": "string"
+							},
+							{
+								"internalType": "uint256",
+								"name": "votesBiden",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "votesTrump",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint8",
+								"name": "stateSeats",
+								"type": "uint8"
+							}
+						],
+						"internalType": "struct USElection.StateResult",
+						"name": "result",
+						"type": "tuple"
+					}
+				],
+				"name": "submitStateResult",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "submitedStates",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/USElection.sol": "USElection"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Ownable.sol": {
+			"keccak256": "0x407dbd1bd97215fbf8497c3c732283357c50015e68551ca9689fe8e04f3d014d",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://1a7384e05872cc063a75233865a0fe20d3ea4edbaaa5cf19861b98081e4d63c0",
+				"dweb:/ipfs/QmVUrE8c5uBcPfsqMpSNqujBCMk1SHzUz8BoxN5PMmZhVX"
+			]
+		},
+		"contracts/USElection.sol": {
+			"keccak256": "0x62d5cd201b1f84d1a463623ffc3b6353e6f0c4d0eab5f7c92d8287333bae882f",
+			"license": "UNLICENSED",
+			"urls": [
+				"bzz-raw://08e0a3c5bae055084277b85095227c84600e9690ab7c191356064a31067b4029",
+				"dweb:/ipfs/Qmd8v8cpi6daULnTFgwFcBmVfrKdeWLjSYhuqNGCsQViKY"
+			]
+		}
+	},
+	"version": 1
+}
