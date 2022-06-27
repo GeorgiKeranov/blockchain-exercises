@@ -6,6 +6,75 @@
 	"output": {
 		"abi": [
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "ProductAdded",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "ProductBought",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "ProductUpdated",
+				"type": "event"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -36,7 +105,7 @@
 						"type": "string"
 					}
 				],
-				"name": "availableProducts",
+				"name": "availableProductsNames",
 				"outputs": [
 					{
 						"internalType": "bool",
@@ -45,6 +114,24 @@
 					}
 				],
 				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "quantity",
+						"type": "uint256"
+					}
+				],
+				"name": "buyProduct",
+				"outputs": [],
+				"stateMutability": "payable",
 				"type": "function"
 			},
 			{
@@ -133,6 +220,30 @@
 				"inputs": [
 					{
 						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"name": "productsPurchases",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
 						"name": "id",
 						"type": "uint256"
 					},
@@ -184,11 +295,11 @@
 			]
 		},
 		"contracts/Store.sol": {
-			"keccak256": "0xff80551c62737599ed28e0c0a3598eb43a6bc35b882c78e49a51a88673fca371",
+			"keccak256": "0xbb8480f6bf128dc6b438eaffecedaf25b5024b409b7a7201c73de1a281ed813f",
 			"license": "UNLICENSED",
 			"urls": [
-				"bzz-raw://925c3dacc71e998229530cce5c08ad8fe2294d4c022ab4f2ca4faa611d00d017",
-				"dweb:/ipfs/QmPCg6WASasq8k529M71rXLXLUjVWsNrHYVhX8VZaTL8H5"
+				"bzz-raw://364541538c4024cb9aaf54219017961ad2e8d450cd7aceea83d1e6350dd09a4d",
+				"dweb:/ipfs/QmPZEyBDavfQa7taaApWEQ2mNetRChXvNU7K9wKuEswYvf"
 			]
 		}
 	},
